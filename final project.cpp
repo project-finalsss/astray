@@ -38,7 +38,7 @@ void opening()
     cin.get();
     cout << "Good luck, child.\n";
     cin.get();
-    cout << "WHRRRRRR*\n<You black out.>\n";
+    cout << "WRYYYYYYYY*\n<You black out.>\n";
     cin.get();
 }
 
