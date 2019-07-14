@@ -1,4 +1,4 @@
-//comsc110 assignment7
+//comsc110 final project
 //Yibo Fu
 
 #include <iostream>
