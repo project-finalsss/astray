@@ -42,9 +42,9 @@ void opening()
     cin.get();
 }
 
-void choice(int j)
+void choice(int i)
 {
-    if (j = 1)
+    if (i = 1)
     {
         cout << "1. I don’t know.\n"
     	     << "2. I don’t know.\n"
