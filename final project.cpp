@@ -24,7 +24,7 @@ void opening()
     cout << endl << "It is year 2525. Everyone has lost their memory." ;
     cin.get();
 
-    cout <<endl << "kkkkkkkkkkkkkkkkkkkkk? (Enter your name) ";
+    cout <<endl << "Who am I? (Enter your name) ";
     getline(cin, name);
 
     cout << endl << "Your name is " << name << "." ;
