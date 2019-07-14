@@ -1,14 +1,14 @@
 //comsc110 final project
-//Yibo Fu
+//Yibo Fu Lawrence Luong
 
 #include <iostream>
 #include <iomanip>
 #include <cmath>
 #include <string>
+
 using namespace std;
 void opening();
-void showMenu();
-string name;
+void choice(int);
 
 int main()
 {
@@ -17,39 +17,38 @@ int main()
 
 void opening()
 {
-    string name;
-    cout << "**Welcome to this world.**" << "    (Enter to continue)";
+    cout << "Greetings child." << " (Press any key to continue)";
     cin.get();
-
-    cout << endl << "It is year 2525. Everyone has lost their memory." ;
+    cout << "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
     cin.get();
-
-    cout <<endl << "Who am I? (Enter your name) ";
-    getline(cin, name);
-
-    cout << endl << "Your name is " << name << "." ;
+    cout << "Who am I? (Enter your name)\n";
+    choice(1);
     cin.get();
-
-    cout << endl << name << ": " << "Who are you?" ;
+    cin.ignore();
+    cout << "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
     cin.get();
-
-    cout << endl << "I am a little memory from the Fountain of Truth.";
+    cout << "Who am I? I am a memory from the Fountain of Truth. But I am incomplete…" ;
     cin.get();
-
-    cout << endl << name << ": " << "How could I find memory for everyone?";
+    cout << "Recover my other pieces and all will be revealed.";
     cin.get();
-
-    cout << endl << "You need to find the Fountain of the Truth lying in the East.";
+    cout << "The ones that still remember… Help them and they will help you.";
     cin.get();
-
-    cout << endl << "You can find the way by asking people that you meet on your journey.";
+    cout << "Good luck, child.\n";
     cin.get();
-
-    cout << endl << "These people may or may not help you.";
-    cin.get();
-
-    cout << endl << "Good luck, " << name << ".";
+    cout << "WHRRRRRR*\n<You black out.>\n";
     cin.get();
 }
+
+void choice(int j)
+{
+    if (j = 1)
+    {
+        cout << "1. I don’t know.\n"
+    	     << "2. I don’t know.\n"
+	         << "3. I don’t know.\n"
+	         << "4. I don’t know.\n";
+    }
+}
+
 
 
