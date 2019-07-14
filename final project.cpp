@@ -12,6 +12,17 @@ using namespace std;
 void opening();
 void choice(int);
 
+int plyr_health = 10,
+    plyr_atk = 2,
+    plyr_mgc = 0,
+    plyr_armor = 0,
+    plyr_mgc_resist = 0,
+    fight_counter = 0;
+    help_counter = 0;
+    run_counter = 0;
+
+
+
 int main()
 {
     opening();
@@ -38,13 +49,13 @@ void opening()
     cin.get();
     cout << "Good luck, child.\n";
     cin.get();
-    cout << "WRYYYYYYYY*\n<You black out.>\n";
+    cout << "WHRRRRRR*\n<You black out.>\n";
     cin.get();
 }
 
 void choice(int i)
 {
-    if (i = 1)
+    if (i = i)
     {
         cout << "1. I don’t know.\n"
     	     << "2. I don’t know.\n"
@@ -57,58 +68,60 @@ void choice(int i)
 
 /*NPC
 
-farmerNPC();
+return farmerNPC();
     int option,
         health = 5,
         attack = 1,
         armor = 1,
         mgc_resist = 0;
     cout << "Hey there! I'm the farmer! Would you like to buy my beets?"
-    //for loop until farmer dies??
-    option = combatmenu(); //open combat menu (returns their option)
-    if (option = 1) //(physical attack) 
-        health = health - (plyr_atk - armor);
-        cout << "OW DAG NABBIT. YUR GONNA PAY!";
-    else if (option = 2) //(magical attack)
-        health = health - (plyr_mgc - mgc_resist);
-        cout << "WHAT ARE YOU? A MAGICIAN?";
-    else if (option = 3) //(talk)
-        cout << "You will? Thank you! My family eatin' good t'night.";
-        cout << "Here, I have an extra tractor. You can have it for free!";
-        attack++;
-        help_counter++;
-        return help_counter, attack;
-    else //(option = 4) run 
-        cout << "MY BEETS! BUY THEM PLEASEEE.";
-        cout << "<You got away safely.>"
-        run_counter++;
-        return run_counter;
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-    if (j = 1)
+    while (true)
     {
-        cout << "1. I don’t know.\n"
-    	     << "2. I don’t know.\n"
-	         << "3. I don’t know.\n"
-	         << "4. I don’t know.\n";
+        int turn = 0;
+        option = combatmenu(); //open combat menu (returns their option)
+        if (option = 1) //(physical attack) 
+            health = health - (plyr_atk - armor);
+            cout << "OW DAG NABBIT. YUR GONNA PAY!\n Here I go, BEET JUICE BEETDOWN!";
+            plyr_health = plyr_health - (attack - plyr_armor);
+            cout >> "<You received " << (attack - plyr_armor) << " damage!";
+            if (health <= 0) 
+            {
+                cout << "'I've been BEET! :('";
+                fight_counter++;
+                return fight_counter;
+            }
+        else if (option = 2) //(magical attack)
+            health = health - (plyr_mgc - mgc_resist);
+            cout << "WHAT ARE YOU? A MAGICIAN?\nHere I go, BEET JUICE BEETDOWN!\n";
+            plyr_health = plyr_health - (attack - plyr_armor);
+            cout >> "<You received " << (attack - plyr_armor) << " damage!";
+            if (health <= 0) 
+            {
+                cout << "'I've been BEET! :('";
+                fight_counter++;
+                return fight_counter;
+            }
+        else if (option = 3) //(talk)
+            cout << "You will? Thank you! My family eatin' good t'night.";
+            cout << "Here, I have an extra tractor. You can have it for free!";
+            attack++;
+            help_counter++;
+            return help_counter, attack;
+        else //(option = 4) run 
+            cout << "MY BEETS! BUY THEM PLEASEEE.";
+            cout << "<You got away safely.>"
+            run_counter++;
+            return run_counter;
+        turn++;
+        if (turn = 20) cout << "'Oh no, my beets are ripe! Time to harvest!'\n<The farmer flees.>";
     }
-}
+    
 
-
+chickenguruNPC();
+    int option,
+        health = 1,
+        attack = 
+    
+    
+    
 
