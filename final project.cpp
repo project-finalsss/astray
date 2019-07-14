@@ -8,6 +8,7 @@
 using namespace std;
 void opening();
 void showMenu();
+string name;
 
 int main()
 {
