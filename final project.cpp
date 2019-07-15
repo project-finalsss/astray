@@ -8,20 +8,22 @@
 #include <thread>
 #include <chrono>
 
+
 using namespace std;
+using namespace chrono;
+
 void opening();
 void choice(int);
+void slowSpeed(string);
 
 int plyr_health = 10,
     plyr_atk = 2,
     plyr_mgc = 0,
     plyr_armor = 0,
     plyr_mgc_resist = 0,
-    fight_counter = 0;
-    help_counter = 0;
+    fight_counter = 0,
+    help_counter = 0,
     run_counter = 0;
-
-
 
 int main()
 {
@@ -30,10 +32,10 @@ int main()
 
 void opening()
 {
-    string w = "Greetings child." << " (Press any key to continue)";
+    string w = "Greetings child. (Press any key to continue)";
     slowSpeed(w);
     cin.get();
-    string q = "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
+    string q = "It is the year 2525. Many people have lost their memories due to the Great Mystery.\nTell me child, do you remember who you are?\n" ;
     slowSpeed(q);
     cin.get();
     string a = "Who am I?\n";
@@ -45,19 +47,19 @@ void opening()
     string s = "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
     slowSpeed(s);
     cin.get();
-    string d = "Who am I? I am a memory from the Fountain of Truth. But I am incomplete¡­" ;
+    string d = "Who am I? I am a memory from the Fountain of Truth. But I am incomplete..." ;
     slowSpeed(d);
     cin.get();
     string f = "Recover my other pieces and all will be revealed.";
     slowSpeed(f);
     cin.get();
-    string g = "The ones that still remember¡­ Help them and they will help you.";
+    string g = "The ones that still remember... Help them and they will help you.";
     slowSpeed(g);
     cin.get();
     string h = "Good luck, child.\n";
     slowSpeed(h);
     cin.get();
-    string j = "WRYYYYYYYYY*\n<You black out.>\n";
+    string j = "*WRYYYYYYYYY*\n<You black out.>\n";
     slowSpeed(j);
     cin.get();
 }
