@@ -161,3 +161,31 @@ void slowSpeed(string s)
     }
 }
 
+int combatMenu()
+{
+    while(true)
+    {
+    char ans;
+    int option;
+    cout<<"______________________"<<endl;
+    cout<<left<<"|"<<setw(20)<<"Combat Menu"<< right<<"|"<<endl;
+    cout<<left<<"|"<<left<<setw(9)<<"A. Fight"<<setw(10)<<"B. Talk"<<right<<" |"<<endl;
+    cout<<left<<"|"<<left<<setw(8)<<"C. Run"<<setw(10)<<" D. Notebook"<<right<<"|"<<endl;
+    cout<<"______________________"<<endl;
+    cin>> ans;
+    
+    if(ans == 'a' || ans == 'A')
+    {
+        cout<<"Attack?(1) or magic?(2)"<<endl;
+        cin>> option;
+        if (option = 1)
+        return option;
+        if (option = 2)
+        return option;
+    }
+    if(ans == 'b'|| ans == 'B')
+        return option = 3;
+    if(ans == 'c'|| ans == 'C')
+        return option = 4;
+    }
+   
