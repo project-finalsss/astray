@@ -76,29 +76,36 @@ void choice(int i)
 
 
 /*NPC
-
-return farmerNPC();
+int farmerNPC();
     int option,
         health = 5,
         attack = 1,
         armor = 1,
         mgc_resist = 0;
-    cout << "Hey there! I'm the farmer! Would you like to buy my beets?"
+    cout << "Hey there! I'm the farmer! I'm not much of a fighter hehe. Would you like to buy my beets?"
     while (true)
     {
         int turn = 0;
         option = combatmenu(); //open combat menu (returns their option)
         if (option = 1) //(physical attack) 
             health = health - (plyr_atk - armor);
+            healthCheck(health, "'I've been BEET! :('");
+            
             cout << "OW DAG NABBIT. YUR GONNA PAY!\n Here I go, BEET JUICE BEETDOWN!";
             plyr_health = plyr_health - (attack - plyr_armor);
             cout >> "<You received " << (attack - plyr_armor) << " damage!";
+            
+            
+            
             if (health <= 0) 
             {
                 cout << "'I've been BEET! :('";
                 fight_counter++;
                 return fight_counter;
             }
+            
+            
+            
         else if (option = 2) //(magical attack)
             health = health - (plyr_mgc - mgc_resist);
             cout << "WHAT ARE YOU? A MAGICIAN?\nHere I go, BEET JUICE BEETDOWN!\n";
@@ -125,12 +132,23 @@ return farmerNPC();
         if (turn = 20) cout << "'Oh no, my beets are ripe! Time to harvest!'\n<The farmer flees.>";
     }
     
-
 chickenguruNPC();
     int option,
         health = 1,
         attack = 
     
+    
+    
+healthCheck(int health,string dialogue)
+    if (health <= 0) 
+        {
+            cout << dialogue;
+            fight_counter++;
+            return fight_counter;
+        }
+ 
+    
+*/
     
 void slowSpeed(string s)
 {
