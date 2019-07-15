@@ -30,26 +30,35 @@ int main()
 
 void opening()
 {
-    cout << "Greetings child." << " (Press any key to continue)";
+    string w = "Greetings child." << " (Press any key to continue)";
+    slowSpeed(w);
     cin.get();
-    cout << "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
+    string q = "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
+    slowSpeed(q);
     cin.get();
-    cout << "Who am I?\n";
+    string a = "Who am I?\n";
+    slowSpeed(a);
     cin.get();
     choice(1);
     cin.get();
     cin.ignore();
-    cout << "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
+    string s = "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
+    slowSpeed(s);
     cin.get();
-    cout << "Who am I? I am a memory from the Fountain of Truth. But I am incomplete…" ;
+    string d = "Who am I? I am a memory from the Fountain of Truth. But I am incomplete¡­" ;
+    slowSpeed(d);
     cin.get();
-    cout << "Recover my other pieces and all will be revealed.";
+    string f = "Recover my other pieces and all will be revealed.";
+    slowSpeed(f);
     cin.get();
-    cout << "The ones that still remember… Help them and they will help you.";
+    string g = "The ones that still remember¡­ Help them and they will help you.";
+    slowSpeed(g);
     cin.get();
-    cout << "Good luck, child.\n";
+    string h = "Good luck, child.\n";
+    slowSpeed(h);
     cin.get();
-    cout << "WHRRRRRR*\n<You black out.>\n";
+    string j = "WRYYYYYYYYY*\n<You black out.>\n";
+    slowSpeed(j);
     cin.get();
 }
 
