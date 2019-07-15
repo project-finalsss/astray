@@ -9,8 +9,10 @@
 #include <chrono>
 
 using namespace std;
+using namespace chrono;
 void opening();
 void choice(int);
+void slowSpeed(string);
 
 int plyr_health = 10,
     plyr_atk = 2,
@@ -30,26 +32,35 @@ int main()
 
 void opening()
 {
-    cout << "Greetings child." << " (Press any key to continue)";
+    string h = "Greetings child. (Press any key to continue)";
+    slowSpeed(h);
     cin.get();
-    cout << "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
+    string b = "It is the year 2525. Many people have lost their memories due to the Great Mystery. Tell me child, do you remember who you are?\n" ;
+    slowSpeed(b);
     cin.get();
-    cout << "Who am I?\n";
+    string a = "Who am I?\n";
+    slowSpeed(a);
     cin.get();
     choice(1);
     cin.get();
     cin.ignore();
-    cout << "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
+    string v = "\nI see. Perhaps you may still be of some use. You were destined to find me after all.";
+    slowSpeed(v);
     cin.get();
-    cout << "Who am I? I am a memory from the Fountain of Truth. But I am incomplete…" ;
+    string z = "Who am I? I am a memory from the Fountain of Truth. But I am incomplete…" ;
+    slowSpeed(z);
     cin.get();
-    cout << "Recover my other pieces and all will be revealed.";
+    string d = "Recover my other pieces and all will be revealed.";
+    slowSpeed(d);
     cin.get();
-    cout << "The ones that still remember… Help them and they will help you.";
+    string f = "The ones that still remember… Help them and they will help you.";
+    slowSpeed(f);
     cin.get();
-    cout << "Good luck, child.\n";
+    string g = "Good luck, child.\n";
+    slowSpeed(g);
     cin.get();
-    cout << "WHRRRRRR*\n<You black out.>\n";
+    string j = "WRYYYYYYYY*\n<You black out.>\n";
+    slowSpeed(j);
     cin.get();
 }
 
@@ -59,12 +70,19 @@ void choice(int i)
     {
         cout << "1. I don’t know.\n"
     	     << "2. I don’t know.\n"
-	         << "3. I don’t know.\n"
-	         << "4. I don’t know.\n";
+	     << "3. I don’t know.\n"
+	     << "4. I don’t know.\n";
     }
 }
 
-
+void slowSpeed(string s)
+{
+    for (char c : s)
+    {
+        this_thread::sleep_for(milliseconds(50));
+        cout << c << flush;
+    }
+}
 
 /*NPC
 
